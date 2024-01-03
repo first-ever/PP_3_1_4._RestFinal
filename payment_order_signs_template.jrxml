@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="multitable_subreport" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="678bf408-397f-4797-bb50-84262b9df76b">
+    <field name="signerName" class="java.lang.String"/>
+    <field name="signTypeCode" class="java.lang.String"/>
+    <field name="signDateTime" class="java.lang.String"/>
+    <field name="certificateNumber" class="java.lang.String"/>
+    <field name="cryptographyType" class="java.lang.String"/>
+    <columnHeader>
+        <band height="12" splitType="Stretch">
+            <staticText>
+                <reportElement mode="Opaque" x="0" y="0" width="141" height="12" uuid="af654b95-0a60-40fc-80c6-df38cc28061c"/>
+                <box>
+                    <pen lineWidth="0.25"/>
+                    <topPen lineWidth="0.25"/>
+                    <leftPen lineWidth="0.25"/>
+                    <bottomPen lineWidth="0.25"/>
+                    <rightPen lineWidth="0.25"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+                    <font fontName="Arial" size="8"/>
+                </textElement>
+                <text><![CDATA[ФИО подписанта]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="141" y="0" width="73" height="12" uuid="7969463f-0569-4863-bbc3-a87364369a0f">
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+                <box>
+                    <pen lineWidth="0.25"/>
+                    <topPen lineWidth="0.25"/>
+                    <leftPen lineWidth="0.25"/>
+                    <bottomPen lineWidth="0.25"/>
+                    <rightPen lineWidth="0.25"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+                    <font fontName="Arial" size="8"/>
+                </textElement>
+                <text><![CDATA[Тип криптографии]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="214" y="0" width="70" height="12" uuid="86942d20-9a68-4409-8907-8abcfef1c82e">
+                    <property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+                </reportElement>
+                <box>
+                    <pen lineWidth="0.25"/>
+                    <topPen lineWidth="0.25"/>
+                    <leftPen lineWidth="0.25"/>
+                    <bottomPen lineWidth="0.25"/>
+                    <rightPen lineWidth="0.25"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+                    <font fontName="Arial" size="8"/>
+                </textElement>
+                <text><![CDATA[Тип подписи]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="284" y="0" width="85" height="12" uuid="86942d20-9a68-4409-8907-8abcfef1c82e"/>
+                <box>
+                    <pen lineWidth="0.25"/>
+                    <topPen lineWidth="0.25"/>
+                    <leftPen lineWidth="0.25"/>
+                    <bottomPen lineWidth="0.25"/>
+                    <rightPen lineWidth="0.25"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+                    <font fontName="Arial" size="8"/>
+                </textElement>
+                <text><![CDATA[Дата и время подписи]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="369" y="0" width="171" height="12" uuid="86942d20-9a68-4409-8907-8abcfef1c82e">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                </reportElement>
+                <box>
+                    <pen lineWidth="0.25"/>
+                    <topPen lineWidth="0.25"/>
+                    <leftPen lineWidth="0.25"/>
+                    <bottomPen lineWidth="0.25"/>
+                    <rightPen lineWidth="0.25"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+                    <font fontName="Arial" size="8"/>
+                </textElement>
+                <text><![CDATA[Серийный номер сертификата]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="12" splitType="Prevent">
+            <textField textAdjust="StretchHeight">
+                <reportElement stretchType="ElementGroupHeight" x="0" y="0" width="141" height="12" uuid="2b991eb1-6e24-4e74-8ee2-cd90fe07f60a"/>
+                <box>
+                    <pen lineWidth="0.25"/>
+                    <topPen lineWidth="0.25"/>
+                    <leftPen lineWidth="0.25"/>
+                    <bottomPen lineWidth="0.25"/>
+                    <rightPen lineWidth="0.25"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+                    <font fontName="Arial" size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{signerName}]]></textFieldExpression>
+            </textField>
+            <textField textAdjust="StretchHeight">
+                <reportElement stretchType="ElementGroupHeight" x="141" y="0" width="73" height="12" uuid="71929061-2351-477c-8d2d-431c846f8a06">
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
+                <box>
+                    <pen lineWidth="0.25"/>
+                    <topPen lineWidth="0.25"/>
+                    <leftPen lineWidth="0.25"/>
+                    <bottomPen lineWidth="0.25"/>
+                    <rightPen lineWidth="0.25"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+                    <font fontName="Arial" size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{cryptographyType}]]></textFieldExpression>
+            </textField>
+            <textField textAdjust="StretchHeight">
+                <reportElement stretchType="ElementGroupHeight" x="214" y="0" width="70" height="12" uuid="16b99246-d1f5-4c96-90db-34ea5f3141db">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                </reportElement>
+                <box>
+                    <pen lineWidth="0.25"/>
+                    <topPen lineWidth="0.25"/>
+                    <leftPen lineWidth="0.25"/>
+                    <bottomPen lineWidth="0.25"/>
+                    <rightPen lineWidth="0.25"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+                    <font fontName="Arial" size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{signTypeCode}]]></textFieldExpression>
+            </textField>
+            <textField textAdjust="StretchHeight">
+                <reportElement stretchType="ElementGroupHeight" x="284" y="0" width="85" height="12" uuid="16b99246-d1f5-4c96-90db-34ea5f3141db">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                </reportElement>
+                <box>
+                    <pen lineWidth="0.25"/>
+                    <topPen lineWidth="0.25"/>
+                    <leftPen lineWidth="0.25"/>
+                    <bottomPen lineWidth="0.25"/>
+                    <rightPen lineWidth="0.25"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+                    <font fontName="Arial" size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{signDateTime}]]></textFieldExpression>
+            </textField>
+            <textField textAdjust="StretchHeight">
+                <reportElement stretchType="ElementGroupHeight" x="369" y="0" width="171" height="12" uuid="16b99246-d1f5-4c96-90db-34ea5f3141db">
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                </reportElement>
+                <box>
+                    <pen lineWidth="0.25"/>
+                    <topPen lineWidth="0.25"/>
+                    <leftPen lineWidth="0.25"/>
+                    <bottomPen lineWidth="0.25"/>
+                    <rightPen lineWidth="0.25"/>
+                </box>
+                <textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+                    <font fontName="Arial" size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{certificateNumber}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>
